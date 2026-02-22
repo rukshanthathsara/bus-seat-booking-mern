@@ -1,0 +1,104 @@
+.booking-container {
+  display: flex;
+  gap: 40px;
+  padding: 60px 5%;
+  background-color: #f5f6fa;
+  min-height: 100vh;
+}
+
+.booking-form-card,
+.seat-layout-card {
+  flex: 1;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.booking-form-card h2,
+.seat-layout-card h2 {
+  margin-bottom: 20px;
+}
+
+.booking-form-card input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.booking-form-card button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.booking-form-card button:hover {
+  background-color: #0056b3;
+}
+
+/* BUS LAYOUT */
+.bus-layout {
+  display: grid;
+  grid-template-columns: repeat(4, 60px);
+  gap: 15px 25px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.seat {
+  width: 60px;
+  height: 60px;
+  background-color: #28a745;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.seat:hover {
+  transform: scale(1.05);
+}
+
+.seat.booked {
+  background-color: crimson;
+  cursor: not-allowed;
+}
+
+.seat.selected {
+  background-color: #007bff;
+}
+
+/* LEGEND */
+.seat-legend {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.legend {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 4px;
+  margin-right: 8px;
+}
+
+.legend.available {
+  background-color: #28a745;
+}
+
+.legend.selected {
+  background-color: #007bff;
+}
+
+.legend.booked {
+  background-color: crimson;
+}
