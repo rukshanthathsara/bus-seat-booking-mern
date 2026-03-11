@@ -18,7 +18,7 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-logo" onClick={() => navigate("/")}>
-        BusBook
+        BusBooking Change
       </div>
 
       <div className="navbar-links">
